@@ -1,0 +1,110 @@
+*{
+    font-family: 'Geologica', sans-serif;
+  }
+
+.flex{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:500px;
+}
+
+.flexr{
+  display: flex;
+  flex-direction: row;
+  margin-top:4px;
+}
+
+ul li{
+  display:flex;
+  list-style-type: none;
+  position:relative;
+  font-size: 18px;
+  user-select: none;  /*The user-select property specifies whether the text of an element can be selected.*/
+  padding:20px;
+  margin-bottom: 2px;
+}
+
+ul li::before{
+  content:'';
+  background-image: url(images/oval_3515278.png);
+  background-size: cover;
+  background-position: center;
+  width:28px;
+  height:28px;
+  position:absolute;
+  top:20px;
+  left: -30px;
+}
+
+ul li.checked{
+  color:#555;
+  text-decoration: line-through;  
+}
+
+ul li.checked::before{
+  background-image: url(images/ok-1976099_1920.png);
+  width:40px;
+  height:40px;
+  position:absolute;
+  left:-35px;
+  top:15px;
+}
+
+input{
+  width:350px;
+  font-size:17px;
+  padding:10px 5px;
+  outline:none;
+  border-radius: 25px;
+  border:none;
+  padding-left: 15px;
+  background-color: rgb(235, 233, 233);
+}
+
+ul li span{
+  position: absolute;
+  right:0;
+  top:12px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius:50% ;
+}
+
+ul li span:hover{
+  border-radius:25%;
+  background-color: ghostwhite;
+}
+
+.main{
+  padding:40px;
+  width:400px;
+  box-shadow: 4px 4px 8px grey ;
+}
+
+.flexr{
+  position:relative;
+}
+
+button{
+  position:absolute;
+    right:20px;
+    padding:12px 35px;
+    top:-2px;
+    font-size:17px;
+    font-weight:bold;
+    border-radius:25px;
+    border:none;
+    color:white;
+    background-color: rgb(106, 236, 106);
+}
+
+.scroll{
+  display:none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
